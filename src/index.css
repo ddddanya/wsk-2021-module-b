@@ -1,0 +1,299 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mvp {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #fff;
+  transition: all 0.1s ease-out;
+}
+
+.mvp .title {
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.mvp .place {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.mvp .date {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.mvp .available {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.home .videoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home .videoBox video {
+  position: absolute;
+  height: 100vh;
+  max-height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+}
+
+.home .videoBox .title {
+  font-size: 90px;
+  font-weight: 700;
+  color: #fff;
+}
+.home .videoBox .place {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.home .videoBox .date {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.home .videoBox .icon {
+  width: 30px;
+  margin-top: 50px;
+  animation: arrow 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+.home .videoBox .icon img {
+  width: 30px;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.home .reviews {
+  padding: 100px;
+  padding-top: 0;
+}
+
+.home .faq {
+  padding: 100px;
+  padding-top: 0;
+}
+
+.home .concerts {
+  padding: 100px;
+  padding-top: 24px;
+}
+
+.home .reviews > .title {
+  font-size: 60px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.home .faq > .title {
+  font-size: 60px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 24px;
+}
+.home .concerts > .title {
+  font-size: 60px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 24px;
+}
+.home .concerts .items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home .concerts .items .item {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  width: calc(50% - 40px);
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+.home .concerts .items .item img {
+  width: 100%;
+  border-radius: 10px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.home .concerts .items .item .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.home .concerts .items .item .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.home .concerts .items .item .description {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.home .concerts .items .item .button {
+  background: #7373ec;
+  padding: 8px 16px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.home .graz {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.home .graz .text {
+  text-align: center;
+  max-width: 700px;
+  font-size: 20px;
+  font-weight: 500;
+  width: 80%;
+}
+
+.home .reviews .items .item {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+.home .reviews .items .item .text {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.home .reviews .items .item .author {
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+.home .faq .items .item {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+.home .faq .items .item .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.home .faq .items .item .header .title {
+  font-size: 20px;
+}
+
+.home .faq .items .item .text {
+  margin-top: 12px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .home .videoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .home .videoBox video {
+    height: 100vh;
+  }
+
+  .home .videoBox .title {
+    font-size: 60px;
+    margin-top: 0;
+  }
+
+  .home .videoBox .place {
+    font-size: 20px;
+  }
+
+  .home .videoBox .date {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .home .concerts {
+    padding: 24px;
+    padding-top: 24px;
+  }
+
+  .home .reviews {
+    padding: 24px;
+    padding-top: 24px;
+  }
+
+  .home .faq {
+    padding: 24px;
+    padding-top: 24px;
+  }
+
+  .home .concerts .title {
+    font-size: 30px;
+  }
+
+  .home .concerts .items .item {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .home .reviews .items .item {
+    width: calc(100% - 24px);
+  }
+  .home .faq .items .item {
+    width: calc(100% - 24px);
+  }
+}
